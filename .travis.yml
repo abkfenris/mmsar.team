@@ -3,7 +3,7 @@ python:
     - "3.4"
 cache: pip
 install:
-    - pip install "Nikola[extras]""
+    - pip install "Nikola[extras]"
 script:
   - bash ./scripts/deploy-to-gh-pages.sh
 env:
