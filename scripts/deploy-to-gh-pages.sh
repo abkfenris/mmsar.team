@@ -15,6 +15,7 @@ mkdir output
 rev=$(git rev-parse --short HEAD)
 
 # build
+rm .doit.db
 nikola clean
 nikola build
 
