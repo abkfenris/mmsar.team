@@ -1,0 +1,4 @@
+Sitemap: http://mmsar.team/sitemapindex.xml
+
+User-Agent: *
+Host: mmsar.team
