@@ -1,0 +1,12 @@
+language: python
+python:
+    - "3.4"
+cache: pip
+install:
+    - pip install nikola
+script:
+  - bash .scripts/deploy-to-gh-pages.sh
+env:
+  global:
+    - GITHUB_REPO: "abkfenris/mmsar.team"
+    - secure: "ab93LNbbJdilPJ4W3pfYWhS34Eloj+f4jRDDhSUOITOTKOPanVBLBm58AyZWSpcXLLdlATQRUngf7tQ99etb6wRhrPamMVOFz0JiUgrUQHGSFyz9X0vQQkKiYn7i4eQrqDFacxdOBoeNrX0OKm+dUBz21b9pBt7EGbgauGl6IrvOUV/sd5Vrq7po8HGp60nGeqvzO8moHcxO79laI3mgLIdZKw4HNF+GcxCaJ8I67HPBnSa38TDyYw2XY0c//77KnPSIYVfW+lyvJ1zgfBOTs8F955MOCzVZim9whGarO7xapNMUtGJM6GrOjqrMRdEGMnAOkff/kesQm8TWk1RRolxilbHunFEud/hgFyeDl8MNEE1k9ItgFknShnlvLDKvj3hP0dJdR3w0byIElr+pd8Knds/L2J/ICrkWiJIh/F622/eNr4bxAk2sbUZMOUCatd4lDvkVuRBDKEIBqMZcr2ZdR5rVUmO4LWDZe8FrGqZ8Sy/uO1+VrQnfcTJnF0yvzG1rtl12TqOyP/B3FrwusR32627KYF6vec5Xel7e/oVzHx+YTy5Put/acX6jMnY3tC0nOvmwtJ1IjlLWbqOph2U/wfUsaH3yY3YeaYy0ABE2zJBvVg0U2NVMjckrDM8/t95ZoYOipHUbFFS5nkqwlqbGOxn5DFglA4pQyn76Drk="
