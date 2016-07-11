@@ -2,14 +2,20 @@
 # See https://medium.com/@nthgergo/publishing-gh-pages-with-travis-ci-53a8270e87db
 set -o errexit
 
-rm -rf public
-mkdir public
+if [ "$TRAVIS_BRANCH" != "master" ]
+then
+  echo "This commit was made agains the $TRAVIS_BRANCH and not the master. Not deploying to Github pages"
+  exit 0
+fi
+
+rm -rf output
+mkdir output
 
 # config
-git config --global user.email "nobody@nobody.org"
-git config --global user.name "Travis CI"
+git config --global user.email "abk@mac.com"
+git config --global user.name "Alex Kerney"
 
-# build (CHANGE THIS)
+# build
 nikola clean
 nikola build
 
