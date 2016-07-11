@@ -3,9 +3,9 @@ python:
     - "3.4"
 cache: pip
 install:
-    - pip install nikola
+    - pip install "Nikola[extras]""
 script:
-  - bash .scripts/deploy-to-gh-pages.sh
+  - bash ./scripts/deploy-to-gh-pages.sh
 env:
   global:
     - GITHUB_REPO: "abkfenris/mmsar.team"
