@@ -25,9 +25,9 @@ git config --global user.email "abk@mac.com"
 git config --global user.name "Alex Kerney"
 
 #git commit -m "Deploy to Github Pages"
-#git push --force --quiet "https://${GITHUB_TOKEN}@$github.com/${GITHUB_REPO}.git" master:gh-pages > /dev/null 2>&1
+#git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" master:gh-pages > /dev/null 2>&1
 
-git remote add upstream "https://${GITHUB_TOKEN}@$github.com/${GITHUB_REPO}.git"
+git remote add upstream "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
 git fetch upstream
 git reset upstream/gh-pages
 
