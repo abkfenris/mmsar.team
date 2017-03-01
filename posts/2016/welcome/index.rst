@@ -7,6 +7,6 @@
 .. description:
 .. type: text
 
-When we aren't stoming around in the woods, we're working on building ourselves a new website, but we aren't done yet.
+When we aren't stomping around in the woods, we're working on building ourselves a new website, but we aren't done yet.
 
 Check back later!

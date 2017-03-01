@@ -1,6 +1,6 @@
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1106,7 +1106,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2537,7 +2536,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3029,7 +3027,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -7140,8 +7137,10 @@ pre.code .mf { color: #666666 } /* Literal.Number.Float */
 pre.code .mh { color: #666666 } /* Literal.Number.Hex */
 pre.code .mi { color: #666666 } /* Literal.Number.Integer */
 pre.code .mo { color: #666666 } /* Literal.Number.Oct */
+pre.code .sa { color: #BA2121 } /* Literal.String.Affix */
 pre.code .sb { color: #BA2121 } /* Literal.String.Backtick */
 pre.code .sc { color: #BA2121 } /* Literal.String.Char */
+pre.code .dl { color: #BA2121 } /* Literal.String.Delimiter */
 pre.code .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 pre.code .s2 { color: #BA2121 } /* Literal.String.Double */
 pre.code .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -7152,9 +7151,11 @@ pre.code .sr { color: #BB6688 } /* Literal.String.Regex */
 pre.code .s1 { color: #BA2121 } /* Literal.String.Single */
 pre.code .ss { color: #19177C } /* Literal.String.Symbol */
 pre.code .bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.code .fm { color: #0000FF } /* Name.Function.Magic */
 pre.code .vc { color: #19177C } /* Name.Variable.Class */
 pre.code .vg { color: #19177C } /* Name.Variable.Global */
 pre.code .vi { color: #19177C } /* Name.Variable.Instance */
+pre.code .vm { color: #19177C } /* Name.Variable.Magic */
 pre.code .il { color: #666666 } /* Literal.Number.Integer.Long */
 table.codetable { width: 100%;} td.linenos {text-align: right; width: 4em;}
 
@@ -7381,6 +7382,14 @@ article.post-micro {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
+}
+
+.codetable {
+    table-layout: fixed;
+}
+
+.codetable pre {
+    overflow-x: scroll;
 }
 
 /* hat tip bootstrap/html5 boilerplate */
